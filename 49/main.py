@@ -11,7 +11,6 @@ class Solution:
             for l in word:
                 curr_count[ord(l) - ord("a")] += 1
 
-
             added = False
             for w, count  in letter_counts.items():
                 if curr_count == count:
@@ -25,5 +24,4 @@ class Solution:
         return list(anagrams.values())
 
 
-s = Solution()
-print(s.groupAnagrams(["a"]))
+print(Solution().groupAnagrams(["a"]))
